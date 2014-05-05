@@ -1,3 +1,7 @@
+/***Rock, Paper, Scissors - by Nxtstep101***/
+//Rock = 1 
+//Paper = 2 
+//Scissors = 3
 var score = 0;
 var cpu = Math.floor((Math.random() * 3) + 1);
 function rock() {

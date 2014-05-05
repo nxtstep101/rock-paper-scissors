@@ -1,4 +1,4 @@
 Rock-Paper-Scissors
 ===================
 
-A version of the classic "Rock, Paper, Scissors" game, by Nxtstep101. 
+A remake of the classic "Rock, Paper, Scissors" game in JavaScript and PHP, by Nxtstep101. 

@@ -1,3 +1,4 @@
+///////////////////////////////////////Change the alert to regular text///////////////////////////////////////
 /***Rock, Paper, Scissors - by Nxtstep101***/
 //Rock = 1
 //Paper = 2 

@@ -5,12 +5,17 @@
 //Scissors = 3
 $random = rand(1, 3);
 $cpu    = $random;
-$score = 0;
-if (isset($_POST['rock'])) {
+$score  = 0;
+
+function rock() {
 //rock
-} elseif (isset($_POST['paper'])) {
+}
+
+function paper() {
 //paper
-} else {
+}
+
+function scissors() {
 //scissors
 }
 ?>

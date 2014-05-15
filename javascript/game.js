@@ -1,4 +1,3 @@
-///////////////////////////////////////Change the alert to regular text///////////////////////////////////////
 /***Rock, Paper, Scissors - by Nxtstep101***/
 //Rock = 1
 //Paper = 2 
@@ -8,12 +7,12 @@ var score = 0;
 function rock() {
     var cpu = Math.floor((Math.random() * 3) + 1);
     if (cpu === 1) {
-        alert("CPU: Rock\nIts a tie!");
+        $('#result').text("CPU: Rock\nIts a tie!");
     } else if (cpu === 2) {
-        alert("CPU: Paper\nYou lose!");
+        $('#result').text("CPU: Paper\nYou lose!");
         score -= 1;
     } else {
-        alert("CPU: Scissors\nYou win!");
+        $('#result').text("CPU: Scissors\nYou win!");
         score += 1;
     }
     $("#score").text(score);
@@ -22,12 +21,12 @@ function rock() {
 function paper() {
     var cpu = Math.floor((Math.random() * 3) + 1);
     if (cpu === 1) {
-        alert("CPU: Scissors\nYou lose!");
+        $('#result').text("CPU: Scissors\nYou lose!");
         score -= 1;
     } else if (cpu === 2) {
-        alert("CPU: Paper\nIts a tie!");
+        $('#result').text("CPU: Paper\nIts a tie!");
     } else {
-        alert("CPU: Rock\nYou win!");
+        $('#result').text("CPU: Rock\nYou win!");
         score += 1;
     }
     $("#score").text(score);
@@ -36,13 +35,13 @@ function paper() {
 function scissors() {
     var cpu = Math.floor((Math.random() * 3) + 1);
     if (cpu === 1) {
-        alert("CPU: Rock\nYou lose!");
+        $('#result').text("CPU: Rock\nYou lose!");
         score -= 1;
     } else if (cpu === 2) {
-        alert("CPU: Paper\nYou win!");
+        $('#result').text("CPU: Paper\nYou win!");
         score += 1;
     } else {
-        alert("CPU: Scissors\nIts a tie!");
+        $('#result').text("CPU: Scissors\nIts a tie!");
     }
     $("#score").text(score);
 }

@@ -19,8 +19,13 @@ function scissors() {
 //scissors
 }
 ?>
-<form action="game.php" method="post">
-<input type="submit" name="rock" value="rock">
-<input type="submit" name="paper" value="paper">
-<input type="submit" name="scissors" value="scissors">
-</form>
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="game.php" method="post">
+      <input type="submit" name="rock" value="rock">
+      <input type="submit" name="paper" value="paper">
+      <input type="submit" name="scissors" value="scissors">
+    </form>
+  </body>
+</html>

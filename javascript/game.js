@@ -7,12 +7,18 @@ var score = 0;
 function rock() {
     var cpu = Math.floor((Math.random() * 3) + 1);
     if (cpu === 1) {
-        $('#result').text("CPU: Rock\nIts a tie!");
+        $('#cpu').text("Rock");
+        $('#you').text("Rock");
+        $('#result').text("It's a tie!");
     } else if (cpu === 2) {
-        $('#result').text("CPU: Paper\nYou lose!");
+        $('#cpu').text("Paper");
+        $('#you').text("Rock");
+        $('#result').text("You lose!");
         score -= 1;
     } else {
-        $('#result').text("CPU: Scissors\nYou win!");
+        $('#cpu').text("Scissors");
+        $('#you').text("Rock");
+        $('#result').text("You win!");
         score += 1;
     }
     $("#score").text(score);
@@ -21,13 +27,19 @@ function rock() {
 function paper() {
     var cpu = Math.floor((Math.random() * 3) + 1);
     if (cpu === 1) {
-        $('#result').text("CPU: Scissors\nYou lose!");
-        score -= 1;
-    } else if (cpu === 2) {
-        $('#result').text("CPU: Paper\nIts a tie!");
-    } else {
-        $('#result').text("CPU: Rock\nYou win!");
+        $('#cpu').text("Rock");
+        $('#you').text("Paper");
+        $('#result').text("You win!");
         score += 1;
+    } else if (cpu === 2) {
+        $('#cpu').text("Paper");
+        $('#you').text("Paper");
+        $('#result').text("It's a tie!");
+    } else {
+        $('#cpu').text("Scissors");
+        $('#you').text("Paper");
+        $('#result').text("You lose!");
+        score -= 1;
     }
     $("#score").text(score);
 }
@@ -35,13 +47,19 @@ function paper() {
 function scissors() {
     var cpu = Math.floor((Math.random() * 3) + 1);
     if (cpu === 1) {
-        $('#result').text("CPU: Rock\nYou lose!");
+        $('#cpu').text("Rock");
+        $('#you').text("Scissors");
+        $('#result').text("You lose!");
         score -= 1;
     } else if (cpu === 2) {
-        $('#result').text("CPU: Paper\nYou win!");
+        $('#cpu').text("Paper");
+        $('#you').text("Scissors");
+        $('#result').text("You win!");
         score += 1;
     } else {
-        $('#result').text("CPU: Scissors\nIts a tie!");
+        $('#cpu').text("Scissors");
+        $('#you').text("Scissors");
+        $('#result').text("It's a tie!");
     }
     $("#score").text(score);
 }

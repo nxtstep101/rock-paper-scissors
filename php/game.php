@@ -9,33 +9,33 @@ $score  = 0;
 
 if (isset($_REQUEST['rock'])) {
     if ($cpu === 1) {
-        echo "It's a tie!";
+        echo "CPU: Rock<br/>Result: It's a tie!";
     } elseif ($cpu === 2) {
-        echo "You lose!";
+        echo "CPU: Paper<br/>Result: You lose!";
         $score--;
     } else {
-        echo "You win!";
+        echo "CPU:Scissors<br/>Result: You win!";
         $score++;
     }
 } elseif (isset($_REQUEST['paper'])) {
     if ($cpu === 1) {
-        echo "It's a tie!";
+        echo "CPU: Rock<br/>Result: You win!";
     } elseif ($cpu === 2) {
-        echo "You lose!";
-        $score--;
-    } else {
-        echo "You win!";
+        echo "CPU: Paper<br/>Result: It's a tie!";
         $score++;
+    } else {
+        echo "CPU: Paper<br/>Result: You lose!";
+        $score--;
     }
 } else {
     if ($cpu === 1) {
-        echo "You lose!";
+        echo "CPU: Rock<br/>Result: You lose!";
         $score--;
     } elseif ($cpu === 2) {
-        echo "You win!";
+        echo "CPU: Paper<br/>Result: You win!";
         $score++;
     } else {
-        echo "It's a tie!";
+        echo "CPU: Scissors<br/>Result: It's a tie!";
     }
 }
 ?>

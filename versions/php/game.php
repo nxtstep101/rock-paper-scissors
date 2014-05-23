@@ -17,7 +17,7 @@ if (isset($_REQUEST['rock'])) {
         echo "CPU: Paper<br/>" . $loss;
         --$score;
     } else {
-        echo "CPU:Scissors<br/>" . $win;
+        echo "CPU: Scissors<br/>" . $win;
         ++$score;
     }
 } elseif (isset($_REQUEST['paper'])) {

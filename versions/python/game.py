@@ -1,4 +1,5 @@
 from random import randrange
+
 def game():
     user = raw_input('Rock, Paper, or Scissors?')
     reply = user.lower()
@@ -25,6 +26,7 @@ def game():
         else:
             print 'It\'s a tie'
     else:
-        print "Please type either Rock, Paper, or Scissors"
+        print 'Please type either Rock, Paper, or Scissors'
+
 
 game()

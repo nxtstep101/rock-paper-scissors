@@ -5,7 +5,6 @@
 var wins = 0;
 var losses = 0;
 var ties = 0;
-var score = wins - losses;
 
 function rock() {
     setTimeout(function() {
@@ -26,6 +25,7 @@ function rock() {
             $('#result').text("You win!");
             wins += 1;
         }
+        var score = wins - losses;
         $("#wins").text(wins);
         $("#losses").text(losses);
         $("#ties").text(ties);
@@ -52,6 +52,7 @@ function paper() {
             $('#result').text("You lose!");
             losses += 1;
         }
+        var score = wins - losses;
         $("#wins").text(wins);
         $("#losses").text(losses);
         $("#ties").text(ties);
@@ -78,6 +79,7 @@ function scissors() {
             $('#result').text("It's a tie!");
             ties += 1;
         }
+        var score = wins - losses;
         $("#wins").text(wins);
         $("#losses").text(losses);
         $("#ties").text(ties);

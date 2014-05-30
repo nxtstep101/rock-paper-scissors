@@ -31,7 +31,7 @@ if (isset($_REQUEST['rock'])) {
         echo "CPU: Scissors<br/>" . $loss;
         $_SESSION['score']--;
     }
-} else {
+} elseif (isset($_REQUEST['scissors'])) {
     if ($cpu === 1) {
         echo "CPU: Rock<br/>" . $loss;
         $_SESSION['score']--;
@@ -41,8 +41,10 @@ if (isset($_REQUEST['rock'])) {
     } else {
         echo "CPU: Scissors<br/>" . $tie;
     }
+} elseif (isset($_REQUEST['restart'])) {
+    session_unset();
 }
-echo $_SESSION['score'];
+echo "<br />Score: " . $_SESSION['score'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,6 +53,7 @@ echo $_SESSION['score'];
       <input type="submit" name="rock" value="rock">
       <input type="submit" name="paper" value="paper">
       <input type="submit" name="scissors" value="scissors">
+      <input type="submit" name="restart" value="restart">
     </form>
   </body>
 </html>

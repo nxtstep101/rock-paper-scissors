@@ -41,7 +41,7 @@ if (isset($_REQUEST['rock'])) {
     } else {
         echo "CPU: Scissors<br/>" . $tie;
     }
-} elseif (isset($_REQUEST['restart'])) {
+} else {
     session_unset();
 }
 echo "<br />Score: " . $_SESSION['score'];

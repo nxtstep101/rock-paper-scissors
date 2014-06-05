@@ -3,6 +3,7 @@
 //Rock = 1
 //Paper = 2 
 //Scissors = 3
+include "start.php";
 function startGame()
 {
     session_start();
@@ -48,8 +49,6 @@ function startGame()
     }
     echo "<br />Score: " . $_SESSION['score'];
 }
-
-startGame();
 ?>
 <!DOCTYPE html>
 <html>

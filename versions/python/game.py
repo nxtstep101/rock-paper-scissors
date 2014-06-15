@@ -13,5 +13,5 @@ while True:
     elif reply == 'rock' and cpu == 2 or reply == 'paper' and cpu == 0 or reply == 'scissors' and cpu == 1:
         print 'You win'
         print cpu, reply
-	else:
-		print "Please type either rock, paper, or scissors"
+    else:
+	print "Please type either rock, paper, or scissors"

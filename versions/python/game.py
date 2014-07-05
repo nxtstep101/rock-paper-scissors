@@ -1,17 +1,15 @@
-from random import randrange
+import random
 
 while True:
     user_reply = raw_input('Rock, Paper, or Scissors?')
     reply = user_reply.lower()
-    cpu = randrange(3)
-    if reply == 'rock' and cpu == 0 or reply == 'paper' and cpu == 1 or reply == 'scissors' and cpu == 2:
-        print 'Its a tie'
-        print cpu, reply
-    elif reply == 'rock' and cpu == 1 or reply == 'paper' and cpu == 0 or reply == 'scissors' and cpu == 0:
-        print 'You lose'
-        print cpu, reply
-    elif reply == 'rock' and cpu == 2 or reply == 'paper' and cpu == 0 or reply == 'scissors' and cpu == 1:
-        print 'You win'
-        print cpu, reply
+    choices = ['rock', 'paper', 'scissors']
+    cpu = random.choice(choices)
+    if reply == 'rock' and cpu == 'rock' or reply == 'paper' and cpu == 'paper' or reply == 'scissors' and cpu == 'scissors':
+        print 'Its a tie\nYou: %s\nCPU: %s' % (reply, cpu)
+    elif reply == 'rock' and cpu == 'paper' or reply == 'paper' and cpu == 'scissors' or reply == 'scissors' and cpu == 'rock':
+        print 'You lose\nYou: %s\nCPU: %s' % (reply, cpu)
+    elif reply == 'rock' and cpu == 'scissors' or reply == 'paper' and cpu == 'rock' or reply == 'scissors' and cpu == 'paper':
+        print 'You win\nYou: %s\nCPU: %s' % (reply, cpu)
     else:
-	print "Please type either rock, paper, or scissors"
+        print "Please type either rock, paper, or scissors"
